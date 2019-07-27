@@ -3,7 +3,7 @@ $('#footer').load('footer.html');
 
 //const devices = JSON.parse(localStorage.getItem('devices')) || [];
 const response = $.get('http://localhost:3001/devices');
-//console.log(reponse);
+console.log(reponse);
 
 
 $.get('http://localhost:3001/devices')
@@ -16,7 +16,7 @@ $.get('http://localhost:3001/devices')
 
 	
 
-$get('http://localhost:3001/devices')
+$.get('http://localhost:3001/devices')
 .then(response => {
 	reponse.forEach(device => {
 		$('#devices tbody').append(`
